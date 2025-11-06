@@ -111,8 +111,8 @@ body {
     }
 }
 
-/* 768px 아하인 경우 */
-@media (max-width: 768px) {
+/* 767px 아하인 경우 */
+@media (max-width: 767px) {
     body {
         grid-template-columns: 0 1fr;  /* 사이드바 영역 제거 */
     }
