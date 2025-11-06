@@ -64,7 +64,18 @@ youtube-mock-up/
 * **버그 해결:** Grid 영역 충돌과 `overflow` 속성의 전역/지역 충돌 문제를 성공적으로 해결.
 * **접근성 (A11y)**: 모든 아이콘 버튼과 링크에 aria-label 속성을 추가하여 스크린 리더 사용자를 고려.
 
+#### 6. 반응형 제어 전략
+| 화면 크기 | 기준 | Video Grid 열 개수 | sidebar 폭 |
+| :--- | :--- | :--- | :--- |
+| PC | 기본 설정 | 4열 (1fr 1fr 1fr 1fr) | 240px(--sidebar-width) |
+| 데스크톱 | max-width: 1300px | 3열 (1fr 1fr 1fr) | 240px(--sidebar-width) |
+| 태블릿 | max-width: 1024px | 2열 ( 1fr 1fr) | 72px(--small-sidebar-width) |
+| 모바일 | max-width: 767px | 1열 (1fr) | 0 (숨김처리) |
+
+
 ### 결과 화면 (Screenshots)
 
 ![데스크톱화면-FULL](assets/screenshots/Youtube-1.png)
+* 가로 1300px 이상 - 비디오 4열, 사이드바 확장 (240px)*
 ![데스크톱화면-885px](assets/screenshots/Youtube-3.png)
+* 가로 1024px 이하 - 비디오 2열, 사이드바 축소 (72px)*
